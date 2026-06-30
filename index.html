@@ -4,150 +4,110 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Currículo</title>
+<title>Currículo - João Alberto</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CM4Y5PMR6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8CM4Y5PMR6');
+</script>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-    font-family: Arial, sans-serif;
-    background-color: rgba(240,240,240,1);
-    padding-top: 90px;
-}
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+    background-color:#f4f4f4;
 }
 
-.grid{
-    display:grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap:20px;
+header{
+    background-color:#0d6efd;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
 }
 
-.section{
-    background-color: rgba(255,255,255,0.95);
-
-    padding:20px;
-
-    border-radius:12px;
-
-    border:1px solid rgba(0,0,0,0.1);
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-
-    transition:
-    background-color 2s,
-    color 2s,
-    transform 2s,
-    box-shadow 2s;
+.card{
+    transition:0.5s;
 }
 
-.section:hover{
-    background-color: rgba(52,152,219,0.15);
-
-    color: rgba(0,0,0,1);
-
-    transform:
-    scale(1.03)
-    translateY(-8px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
-
-h2{
-    margin-bottom:15px;
-
-    padding-bottom:8px;
-
-    border-bottom:2px solid rgba(52,152,219,0.5);
-
-    text-shadow:1px 1px 2px rgba(0,0,0,0.1);
-}
-
-p{
-    margin-bottom:12px;
-
-    line-height:1.6;
-}
-
-ul{
-    margin-left:20px;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-@media (max-width: 700px){
-
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .menu{
-        flex-wrap:wrap;
-    }
-
-}
-
 </style>
+
 </head>
-
 <body>
-    
-<div class="container">
 
-    <div class="grid">
-        <section class="section" id="sobre">
+<!-- Navbar Bootstrap -->
 
-            <h2>Sobre Mim</h2>
+<header>
+    <h1>João Alberto da Silva Borges</h1>
+    <p>Estudante de Manutenção e Suporte em Informática</p>
+</header>
 
-            <p>
-                Meu nome é João Alberto da Silva Borges, sou estudante do curso de manutenção e suporte em informática.
-            </p>
+<div class="container my-5">
 
-            <p>
-                Gosto da área de tecnologia e computadores.
-            </p>
+    <div class="row g-4">
 
-            <p>
-                Meu objetivo é concluir o curso e iniciar atuação na área.
-            </p>
+        <!-- Card Bootstrap -->
+        <div class="col-md-6">
+            <div class="card h-100" id="sobre">
+                <div class="card-body">
+                    <h3 class="card-title">Sobre Mim</h3>
 
-        </section>
+                    <p>
+                        Meu nome é João Alberto da Silva Borges,
+                        sou estudante do curso de Manutenção e
+                        Suporte em Informática.
+                    </p>
 
-        <section class="section" id="habilidades">
+                    <p>
+                        Tenho interesse por tecnologia,
+                        computadores e desenvolvimento web.
+                    </p>
 
-            <h2>Habilidades</h2>
+                    <p>
+                        Meu objetivo é concluir o curso e iniciar
+                        minha atuação profissional na área.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <ul>
-                <li>Informática básica</li>
-                <li>Conhecimento básico em HTML</li>
-                <li>Conhecimento básico em CSS</li>
-            </ul>
+        <!-- Card Bootstrap -->
+        <div class="col-md-6">
+            <div class="card h-100" id="habilidades">
+                <div class="card-body">
+                    <h3 class="card-title">Habilidades</h3>
 
-        </section>
+                    <ul>
+                        <li>Informática Básica</li>
+                        <li>HTML Básico</li>
+                        <li>CSS Básico</li>
+                        <li>Manutenção de Computadores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <section class="section" id="redes">
+        <div class="col-12">
+            <div class="card" id="redes">
+                <div class="card-body">
+                    <h3 class="card-title">Rede Social</h3>
 
-            <h2>Rede Social</h2>
-
-            <p>nenhuma</p>
-
-        </section>
+                    <p>Nenhuma</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
